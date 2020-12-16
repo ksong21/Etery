@@ -1,0 +1,76 @@
+.navbar-default {
+    background-color: rgb(170, 30, 30);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: rgb(200, 200, 200);
+}
+
+.nav-link {
+    color: rgb(210, 210, 210);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+p {
+    display: inline-block;
+}
+
+#addIngredientButton {
+    background-color: rgb(170, 30, 30);
+    color: white;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+
+#addIngredientButton:hover {
+    background-color: rgb(70, 30, 30);
+}
+
+#addInstructionButton {
+    background-color: rgb(170, 30, 30);
+    color: white;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+
+#addInstructionButton:hover {
+    background-color: rgb(70, 30, 30);
+}
+
+#addTagButton {
+    background-color: rgb(170, 30, 30);
+    color: white;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+
+#addTagButton:hover {
+    background-color: rgb(70, 30, 30);
+}
+
+#submitButton {
+    background-color: rgb(170, 30, 30);
+    color: white;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+
+#submitButton:hover {
+    background-color: rgb(70, 30, 30);
+}
+
+#spinner {
+    display: none;
+}

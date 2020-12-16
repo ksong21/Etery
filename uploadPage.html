@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Etery</title>
+        <meta charset="utf-8">
+		<meta name="Group 29" content="BCIT">
+		
+		<!----------------------------------------------->
+        <!--  Meta tag for rendering on mobile devices -->
+        <!----------------------------------------------->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!----------------------------------------------->
+        <!-- CSS: Bootstrap, Firebase, other API -->
+		<!----------------------------------------------->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!------------------------>
+        <!-- Your own CSS files -->
+		<!------------------------>
+		<link rel="stylesheet" href="css/uploadstyle.css">
+	</head>
+	
+	<body>
+		<!----------------------->
+        <!--  HTML Section -->
+        <!----------------------->
+		<nav class="navbar navbar-expand-lg navbar-default">
+			<a class="navbar-brand" href="index.html">Etery</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="navbar-nav">
+					<a href="account.html" class="nav-item nav-link">My Account</a>
+				</div>
+				<div class="navbar-nav">
+					<a href="main.html" class="nav-item nav-link">Recipes</a>
+				</div>
+			</div>
+		</nav>
+		
+		<br>
+		<p class="heading">Enter recipe title <input type="text" id="recipeName"></p>
+		<hr>
+		<div id="ingredientsBox">
+			<p class="heading">List the ingredients </p><button id="addIngredientButton" onclick="addIngredient()">+</button>
+			<br>
+		</div>
+		<hr>
+		<div id="instructionsBox">
+			<p class="heading">Add ingredient instructions </p><button id="addInstructionButton" onclick="addInstruction()">+</button>
+			<br>
+		</div>
+		<hr>
+		<div id="tagsBox">
+			<p class="heading">Tags </p><button id="addTagButton" onclick="addTags()">+</button>
+			<br>
+		</div>
+		<hr>
+		<div id="descriptionBox">
+			<p class ="heading">Add a description for the recipe</p>
+			<br>
+			<textarea id="description" rows="4" cols="50"></textarea>
+		</div>
+		<hr>
+		<button id="submitButton">Post</button>
+		<div class="spinner-border" id="spinner" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+
+		<!----------------------------------------------->
+		<!-- JS: Boostrap, Firebase, API related    -->
+		<!----------------------------------------------->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+		<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+		<script src="js/firebase_api_29.js"></script>
+	
+		<!--------------------------------------------------------------------->
+		<!-- JS files: Your own JavaScript functions included here    -->
+		<!--------------------------------------------------------------------->
+		<script src="js/upload.js"></script>
+	</body>
+</html>
